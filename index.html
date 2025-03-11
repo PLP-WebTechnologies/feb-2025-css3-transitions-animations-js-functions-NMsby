@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animations & Advanced JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS3 Animations & JavaScript</h1>
+            <p>A demonstration of animations, transitions, and localStorage</p>
+        </header>
+
+        <section class="theme-section">
+            <h2>Theme Preferences</h2>
+            <p>Choose your preferred theme color. Your choice will be saved using localStorage.</p>
+            
+            <div class="theme-controls">
+                <button class="theme-btn" data-theme="blue">Blue Theme</button>
+                <button class="theme-btn" data-theme="green">Green Theme</button>
+                <button class="theme-btn" data-theme="purple">Purple Theme</button>
+                <button class="theme-btn" data-theme="orange">Orange Theme</button>
+            </div>
+        </section>
+
+        <section class="animation-demo">
+            <h2>CSS Animation Examples</h2>
+            
+            <div class="animation-cards">
+                <div class="card" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Hover Me</h3>
+                            <p>CSS Transition Effect</p>
+                        </div>
+                        <div class="card-back">
+                            <p>This card uses CSS transitions for a smooth flip effect on hover!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" id="card2">
+                    <h3>Click Me</h3>
+                    <p>Triggers JavaScript Animation</p>
+                </div>
+                
+                <div class="card" id="card3">
+                    <h3>Loading Animation</h3>
+                    <div class="loader">
+                        <div class="loader-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-profile">
+            <h2>User Profile</h2>
+            <p>Enter your details below. They will be saved to localStorage.</p>
+            
+            <div class="profile-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="display-name">Display Name:</label>
+                    <input type="text" id="display-name" placeholder="Enter your display name">
+                </div>
+                
+                <div class="form-group">
+                    <label>Avatar Color:</label>
+                    <div class="color-options">
+                        <div class="color-option" data-color="#3498db" style="background-color: #3498db;"></div>
+                        <div class="color-option" data-color="#2ecc71" style="background-color: #2ecc71;"></div>
+                        <div class="color-option" data-color="#e74c3c" style="background-color: #e74c3c;"></div>
+                        <div class="color-option" data-color="#f39c12" style="background-color: #f39c12;"></div>
+                        <div class="color-option" data-color="#9b59b6" style="background-color: #9b59b6;"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+                </div>
+                
+                <button id="save-profile">Save Profile</button>
+                <button id="clear-profile">Clear Profile</button>
+            </div>
+            
+            <div class="profile-display">
+                <h3>Your Profile</h3>
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <span id="avatar-initial">?</span>
+                    </div>
+                </div>
+                <p><strong>Username:</strong> <span id="display-username">Not set</span></p>
+                <p><strong>Display Name:</strong> <span id="display-displayname">Not set</span></p>
+                <p><strong>Bio:</strong></p>
+                <p id="display-bio">No bio provided</p>
+            </div>
+        </section>
+
+        <section class="animation-controls">
+            <h2>Custom Animation Controller</h2>
+            <p>Control the animation of the element below using the sliders.</p>
+            
+            <div class="control-panel">
+                <div class="form-group">
+                    <label for="speed-control">Animation Speed:</label>
+                    <input type="range" id="speed-control" min="0.5" max="3" step="0.1" value="1">
+                    <span id="speed-value">1x</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="size-control">Element Size:</label>
+                    <input type="range" id="size-control" min="50" max="200" value="100">
+                    <span id="size-value">100%</span>
+                </div>
+                
+                <div class="animation-buttons">
+                    <button id="start-animation">Start Animation</button>
+                    <button id="stop-animation">Stop Animation</button>
+                </div>
+            </div>
+            
+            <div class="animation-target-container">
+                <div id="animation-target">
+                    <span>🚀</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>CSS3 Transitions, Animations, and Advanced JavaScript Functions - 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
